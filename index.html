@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/977b193dda.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>snapp food</title>
+</head>
+
+<body id="body">
+
+    <div class="safhe-tar" id="safhe-tar" onclick="closetar()"></div>
+
+    <div class="form-worod" id="form-worod">
+        <div class="logo-form-worod">
+            <i class="material-icons" onclick="closeform()">close</i>
+            <div>
+                <p>!Snapp</p>
+                <p>Food</p>
+            </div>
+        </div>
+
+        <div class="worod-ozviat-form-worod">
+            <a href="#">ورود <span>یا</span> عضویت</a>
+        </div>
+
+        <div class="input-form-worod">
+            <label for="inpot">شماره تلفن همراه</label>
+            <input type="phone">
+            <p>شماره تلفن با 09 شروع می شود</p>
+        </div>
+
+        <button>ادامه</button>
+
+
+    </div>
+
+    <div class="location-header" id="location-header">
+
+        <div class="d-1-location-header">
+            <i class="material-icons" onclick="closelocation()">close</i>
+            <h3>انتخاب آدرس</h3>
+            <p>برای مشاهده مناسب‌ترین پیشنهادها به شما، ابتدا موقعیتتان را مشخص کنید.</p>
+        </div>
+
+        <div class="d-2-location-header">
+            <div class="form-d-2-location-header">
+                <form action="">
+                    <p>تهران</p>
+                    <input type="search" value="کشاورز - پارک لاله،زرتشت غربی، برادران آزاد دل، بعد از علی نوری،">
+                        <i class="material-icons">search</i>
+                </form>
+            </div>
+            <div class="btn-d-2-location-header">
+                <button><i class="	fas fa-plus"></i></button>
+                <button><i class="	fas fa-minus"></i></button>
+            </div>
+        </div>
+
+        <div class="d-3-location-header">
+            <button>تایید</button>
+        </div>
+
+    </div>
+
+    <div class="d-2-sec-1-header" id="d-2-sec-1-header">
+        <form action="" onclick="functionsearch()" id="form-header">
+            <i class="material-icons">search</i><input type="search" placeholder="جست و جو در اسنپ فود">
+        </form>
+        <p id="p-form">عبارت مورد نظر خود را وارد کنید</p>
+    </div>
+
+    <div class="form-h-header" id="form-h-header">
+        <form action="" id="form-header">
+            <i class="material-icons">search</i><input type="search" placeholder="جست و جو در اسنپ فود">
+        </form>
+        <p id="p-form">عبارت مورد نظر خود را وارد کنید</p>
+    </div>
+
+    <header>
+
+        <section class="sec-1-header">
+
+            <div class="d-1-sec-1-header">
+                <div class="snapp-food-pink-h">
+                    <p>!Snapp</p>
+                    <p>Food</p>
+                </div>
+
+                <div class="target-header" onclick="locationheader()">
+                    <div><i class="material-icons">my_location</i></div>
+                    <div class="adress-header">
+                        <h4>آدرس انتخابی</h4>
+                        <div>
+                            <p>کشاورز - پارک لاله، شهید گمنام، زرتشت غربی، قبل از میرزایی بی غش، </p><i
+                                class="fa fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="d-3-sec-1-header">
+                <div><i class="material-icons"> work</i>
+                    <p>ثبت نام فروشندگان</p>
+                </div>
+                <a href="#" onclick="formworod()">ورود <span>یا</span> عضویت</a>
+            </div>
+
+            <div class="search-person">
+                <i class="material-icons"  onclick="functionsearch2()">search</i>
+                <i class="material-icons"  onclick="formworod()">person_outline</i>
+            </div>
+
+        </section>
+
+        <section class="sec-2-header">
+
+            <a href="#">
+                <img src="img/restoran-h.png" alt="">
+                <p>رستوران</p>
+            </a>
+            <a href="#">
+                <img src="img/supermarket-h.png" alt="">
+                <p>سوپرمارکت</p>
+            </a>
+            <a href="#">
+                <img src="img/caffe-h.png" alt="">
+                <p>کافه</p>
+            </a>
+            <a href="#">
+                <img src="img/shirini-h.png" alt="">
+                <p>شیرینی</p>
+            </a>
+            <a href="#">
+                <img src="img/nanvaii-h.png" alt="">
+                <p>نانوایی</p>
+            </a>
+            <a href="#">
+                <img src="img/mive-h.png" alt="">
+                <p>میوه</p>
+            </a>
+            <a href="#">
+                <img src="img/protoiin-h.png" alt="">
+                <p>پروتئین</p>
+            </a>
+            <a href="#">
+                <img src="img/abmive-h.png" alt="">
+                <p> آبمیوه بستنی</p>
+            </a>
+            <a href="#">
+                <img src="img/Ajil-h.png" alt="">
+                <p>آجیل</p>
+            </a>
+            <a href="#">
+                <img src="img/sayer-h.png" alt="">
+                <p>سایر</p>
+            </a>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="sec-1">
+            <h4>دسته بندی ها</h4>
+            <section class="sec-child-sec-1">
+                <div class="d-1-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>ایرانی</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-2-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>فست ‌فود</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-3-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>کباب</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-4-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>پیتزا</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-5-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>برگر</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-6-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>ساندویچ</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-7-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>سوخاری</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-8-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>پاستا</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-9-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>سالاد</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-10-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>دریایی</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-11-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>بین‌الملل</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+                <div class="d-12-sec-1 d-sec-1">
+                    <div class="matn-sec-1">
+                        <p>گیلانی</p><i class="material-icons">chevron_left</i>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="sec-2">
+
+            <div class="d-1-sec-2">
+                <h1>اپلیکیشن اسنپ‌فود</h1>
+                <p class="p-1-d-1-sec-2">با اپلیکیشن اسنپ‌فود به راحتی و با چند کلیک ساده می‌توانید رستوران‌ها، کافه‌ها،
+                    شیرینی‌فروشی‌ها و
+                    سوپرمارکت‌های نزدیک خودتان را جست‌و‌جو کرده و از تجربه سفارش آسان از اسنپ‌فود لذت ببرید.
+                </p>
+
+                <p class="p-2-d-1-sec-2">برای دریافت لینک دانلود اپلیکیشن، شماره موبایلتان رو وارد کنید</p>
+
+                <form action="">
+                    <input type="phone" placeholder="*********09"><button>دریافت لینک</button>
+                </form>
+                <div class="img-d-1-sec-2">
+                    <a href="https://play.google.com/store/apps/details?id=com.zoodfood.android.play&hl=en"
+                        target="_blank">
+                        <img src="img/google-play.png" alt="">
+                    </a>
+                    <a href="https://cafebazaar.ir/app/com.zoodfood.android/" target="_blank">
+                        <img src="img/bazar.png" alt="">
+                    </a>
+                    <a href="https://sibapp.com/applications/zoodfood-1" target="_blank">
+                        <img src="img/sib-app.png" alt="">
+                    </a>
+                    <a href="https://app.iapps.ir/i/312476215" target="_blank">
+                        <img src="img/iapps.svg" alt="" class="iapp">
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-2-sec-2">
+
+                <img src="img/img-phone-app.png" alt="">
+            </div>
+
+
+        </section>
+
+        <section class="sec-3">
+
+            <div class="d-1-sec-3">
+                <h2>صاحب کسب و کار هستید؟</h2>
+                <p>با اسنپ فود کسب و کارتان را آنلاین کنید و فروشتان را افزایش دهید.</p>
+
+                <button><i class="material-icons">work</i><a href="https://snappfood.ir/campaign/food-registration"
+                        target="_blank">ثبت نام فروشندگان</a></button>
+            </div>
+
+            <div class="d-2-sec-3">
+                <img src="img/vendor_pic.png" alt="">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="sec-1-footer">
+            <h4>اسنپ‌فود در شهرهای ایران</h4>
+            <section class="city-footer">
+                <div class="d-1-sec-1-footer">
+                    <a href="#">تهران</a>
+                    <a href="#">قزوین</a>
+                    <a href="#">بجنورد</a>
+                    <a href="#">سنندج</a>
+                    <a href="#">گنبد کاووس</a>
+                    <a href="#">نوشهر</a>
+                    <a href="#">رویان</a>
+                    <a href="#">بم</a>
+                    <a href="#">قرچک</a>
+                    <a href="#">گرمسار</a>
+                    <a href="#">تفرش</a>
+                </div>
+                <div class="d-2-sec-1-footer">
+                    <a href="#">مشهد</a>
+                    <a href="#">ساری</a>
+                    <a href="#">بابل</a>
+                    <a href="#">مراغه</a>
+                    <a href="#">بروجرد</a>
+                    <a href="#">کازرون</a>
+                    <a href="#">قوچان</a>
+                    <a href="#">مبارکه</a>
+                    <a href="#">نکا</a>
+                    <a href="#">طبس</a>
+                    <a href="#">رفسنجان</a>
+                </div>
+                <div class="d-3-sec-1-footer">
+                    <a href="#">اصفحان</a>
+                    <a href="#">بوشهر</a>
+                    <a href="#">یاسوج</a>
+                    <a href="#">مرو دشت</a>
+                    <a href="#">زاهدان</a>
+                    <a href="#">رامسر</a>
+                    <a href="#">تربت حیدریه</a>
+                    <a href="#">لار</a>
+                    <a href="#">صومعه سرا</a>
+                    <a href="#">گناباد</a>
+                </div>
+                <div class="d-4-sec-1-footer">
+                    <a href="#">کرج</a>
+                    <a href="#">اردبیل</a>
+                    <a href="#">بابلسر</a>
+                    <a href="#">بندرانزلی</a>
+                    <a href="#">لواسان</a>
+                    <a href="#">مرند</a>
+                    <a href="#">لنگرود</a>
+                    <a href="#">دماوند</a>
+                    <a href="#">فریدونکنار</a>
+                    <a href="#">سرعین</a>
+                </div>
+                <div class="d-5-sec-1-footer">
+                    <a href="#">شیراز</a>
+                    <a href="#">زنجان</a>
+                    <a href="#">لاهیجان</a>
+                    <a href="#">اسلامشهر</a>
+                    <a href="#">نجف آباد</a>
+                    <a href="#">فولادشهر</a>
+                    <a href="#">شهررضا</a>
+                    <a href="#">اندیمشک</a>
+                    <a href="#">هشتگرد</a>
+                    <a href="#">رامهرمز</a>
+                </div>
+                <div class="d-6-sec-1-footer">
+                    <a href="#">تبریز</a>
+                    <a href="#">گرگان</a>
+                    <a href="#">سبزوار</a>
+                    <a href="#">شاهرود</a>
+                    <a href="#">خمینی شهر</a>
+                    <a href="#">محمود آباد</a>
+                    <a href="#">ملایر</a>
+                    <a href="#">نقده</a>
+                    <a href="#">کلارآباد</a>
+                    <a href="#">طرقبه</a>
+                </div>
+                <div class="d-7-sec-1-footer">
+                    <a href="#">قم</a>
+                    <a href="#">همدان</a>
+                    <a href="#">نیشابور</a>
+                    <a href="#">پردیس</a>
+                    <a href="#">آبادان</a>
+                    <a href="#">رباط کریم</a>
+                    <a href="#">ساوه</a>
+                    <a href="#">تربت جام</a>
+                    <a href="#">فلاورجان</a>
+                    <a href="#">جاجرود</a>
+                </div>
+                <div class="d-8-sec-1-footer">
+                    <a href="#">اهواز</a>
+                    <a href="#">کرمانشاه</a>
+                    <a href="#">سمنان</a>
+                    <a href="#">شهر کرد</a>
+                    <a href="#">ایلام</a>
+                    <a href="#">پاکدشت</a>
+                    <a href="#">باقی شهر</a>
+                    <a href="#">سرخ رود</a>
+                    <a href="#">عباس آباد</a>
+                    <a href="#">اردکان یزد</a>
+                </div>
+                <div class="d-9-sec-1-footer">
+                    <a href="#">رشت</a>
+                    <a href="#">شاهین شهر</a>
+                    <a href="#">قائم شهر</a>
+                    <a href="#">پرند</a>
+                    <a href="#">نور</a>
+                    <a href="#">سلمان شهر</a>
+                    <a href="#">شهریار</a>
+                    <a href="#">خوی</a>
+                    <a href="#">شهر ری</a>
+                    <a href="#">فسا</a>
+                </div>
+                <div class="d-10-sec-1-footer">
+                    <a href="#">یزد</a>
+                    <a href="#">بندر عباس</a>
+                    <a href="#">خرم آباد</a>
+                    <a href="#">کیش</a>
+                    <a href="#">قشم</a>
+                    <a href="#">تنباکن</a>
+                    <a href="#">بهشهر</a>
+                    <a href="#">زرین شهر</a>
+                    <a href="#">آبیک</a>
+                    <a href="#">ملارد</a>
+                </div>
+                <div class="d-11-sec-1-footer">
+                    <a href="#">ارومیه</a>
+                    <a href="#">کاشان</a>
+                    <a href="#">بیرجند</a>
+                    <a href="#">آمل</a>
+                    <a href="#">بهارستان</a>
+                    <a href="#">سهند</a>
+                    <a href="#">اندیشه</a>
+                    <a href="#">چالوس</a>
+                    <a href="#">چابهار</a>
+                    <a href="#">ایزدشهر</a>
+                </div>
+                <div class="d-12-sec-1-footer">
+                    <a href="#">کرمان</a>
+                    <a href="#">اراک</a>
+                    <a href="#">دزفول</a>
+                    <a href="#">سپاهان شهر</a>
+                    <a href="#">ورامین</a>
+                    <a href="#">نسیم هشر</a>
+                    <a href="#">بومهن</a>
+                    <a href="#">زابل</a>
+                    <a href="#">خرمشهر</a>
+                    <a href="#">شهرقدس</a>
+                </div>
+            </section>
+        </section>
+
+        <section class="sec-2-footer">
+
+            <div class="d-1-sec-2-footer">
+                <div class="d-matn-icon-footer">
+                    <div class="snapp-food-pink">
+                        <p>!Snapp</p>
+                        <p>Food</p>
+
+                    </div>
+                    <div class="matn-snapp-food-pink">
+                        <p class="snapp-food-farsi-pink">اسنپ فود</p>
+                        <p>تجربه سفارش غذا، از زودفود تا اسنپ‌فود</p>
+                    </div>
+                </div>
+
+                <div class="d-icon-footer">
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-telegram"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-adn"></i>
+                </div>
+            </div>
+
+            <div class="d-2-sec-2-footer">
+                <a href="#">درباره اسنپ‌فود</a>
+                <a href="#">وبلاگ</a>
+                <a href="#">قوانین سایت</a>
+                <a href="#">حریم خصوصی</a>
+                <a href="#">ثبت نام فروشندگان</a>
+            </div>
+
+            <div class="d-3-sec-2-footer">
+                <a href="#">تماس با اسنپ‌ فود</a>
+                <a href="#">پرسش‌های متداول</a>
+                <a href="#">ثبت شکایات</a>
+                <a href="#">اپلیکیشن موبایل</a>
+            </div>
+
+            <div class="d-4-sec-2-footer">
+                <img src="img/logo.png" alt="">
+                <img src="img/senf.png" alt="">
+            </div>
+
+
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
