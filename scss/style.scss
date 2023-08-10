@@ -83,6 +83,13 @@ body{
             width: 50%;
             right: 23%;
         }
+        @media (max-width:568px) {
+            width: 97%;
+            height: 100%;
+            right:0;
+            top: 1.5%;
+            border-radius: 0;
+        }
         .logo-form-worod{
             @include flex-row-between();
             i{
@@ -220,6 +227,13 @@ body{
             width: 60%;
             right: 16%;
         }
+        @media (max-width:768px) {
+            width: 100%;
+            height: 100%;
+            right: 0;
+            top: -20px;
+            border-radius: 0;
+        }
         .d-1-location-header{
             color: #333;
             padding: 15px;
@@ -246,6 +260,7 @@ body{
             background-repeat: no-repeat;
             background-size: cover;
             height: 375px;
+            max-height: 58vh;
             .form-d-2-location-header{
                 width:100%;
                 form{
@@ -311,6 +326,9 @@ body{
         z-index: 10000000;
         top: 10px;
         display: none;
+        @media (max-width:568px) {
+            top: 0;
+        }
         p{
             position: absolute;
             top: 50px;
@@ -323,6 +341,9 @@ body{
             @media (max-width:768px) {
                 width: calc(70vw - 30px);
             }
+            @media (max-width:568px) {
+                width: calc(100vw - 30px);
+            }
         }
         form{
             @include flex-row-center();
@@ -332,6 +353,9 @@ body{
             width:40vw;
             @media (max-width:768px) {
                 width: 70vw;
+            }
+            @media (max-width:568px) {
+                width: 100vw;
             }
             position: relative;
             i{
@@ -386,6 +410,9 @@ header{
                 display: none !important;
             }
         }
+        @media (max-width:568px) {
+           @include flex-column-center()
+        }
         .d-1-sec-1-header{
             @include flex-row();
             .snapp-food-pink-h{
@@ -428,6 +455,7 @@ header{
                     div{
                         @include flex-row-center();
                         margin: 0;
+                       
                         i{
                             color: #FF00A6;
                             font-size: 20px;
@@ -486,7 +514,9 @@ header{
         @include flex-row-between();
         width: calc(100% - 90px);
         padding: 8px 30px 10px 60px;
+        height: 70px;
         overflow-x: scroll;
+        overflow-y: hidden;
         @media (max-width:909px) {
             &::-webkit-scrollbar{
                 height: 5px !important;
@@ -496,6 +526,10 @@ header{
                 background-color: rgb(161, 161, 161);
                 border-radius: 10px;
             }
+        }
+        @media (max-width:568px) {
+            width: calc(100% - 12px);
+            padding:6px;
         }
         &::-webkit-scrollbar{
             height: 0;
@@ -513,6 +547,10 @@ header{
                 color: rgb(102, 102, 102);
                 font-size: 12px;
                 padding-top: 5px;
+                @media (max-width:568px) {
+
+margin: 0;
+                }
             }
         }
     }
@@ -536,32 +574,34 @@ main{
             margin-right: 25px;
         }
         .sec-child-sec-1{
-            height: 280px;
+            // height: 280px;
             display: grid;
             grid-template-columns: repeat(6,1fr);
             grid-template-rows: 1fr 1fr;
             grid-template-areas: "d-1-sec-1 d-2-sec-1 d-3-sec-1 d-4-sec-1 d-5-sec-1 d-6-sec-1"
             "d-7-sec-1 d-8-sec-1 d-9-sec-1 d-10-sec-1 d-11-sec-1 d-12-sec-1";
             @media (max-width:1300px) {
-                height: 400px;
+                // height: 400px;
                 grid-template-columns: repeat(4,1fr);
                 grid-template-rows: repeat(3,1fr);
                 grid-template-areas: "d-1-sec-1 d-2-sec-1 d-3-sec-1 d-4-sec-1" "d-5-sec-1 d-6-sec-1 d-7-sec-1 d-8-sec-1" "d-9-sec-1 d-10-sec-1 d-11-sec-1 d-12-sec-1";
             }
             @media (max-width:992px) {
-                height: 500px;
+                // height: 500px;
                 grid-template-columns: repeat(3,1fr);
                 grid-template-rows: repeat(4,1fr);
                 grid-template-areas: "d-1-sec-1 d-2-sec-1 d-3-sec-1" "d-4-sec-1 d-5-sec-1 d-6-sec-1"
                 "d-7-sec-1 d-8-sec-1 d-9-sec-1" "d-10-sec-1 d-11-sec-1 d-12-sec-1";
             }
             @media (max-width:600px) {
-                height: 700px;
-                grid-template-columns: repeat(2,1fr);
-                grid-template-rows: repeat(6,1fr);
-                grid-template-areas:"d-1-sec-1 d-2-sec-1" "d-3-sec-1 d-4-sec-1" "d-5-sec-1 d-6-sec-1" "d-7-sec-1 d-8-sec-1"
-                "d-9-sec-1 d-10-sec-1" "d-11-sec-1 d-12-sec-1";
+                // height: 700px;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(12,1fr);
+                grid-template-areas:"d-1-sec-1"" d-2-sec-1" "d-3-sec-1 ""d-4-sec-1" "d-5-sec-1 ""d-6-sec-1" 
+                "d-7-sec-1 ""d-8-sec-1"
+                "d-9-sec-1 ""d-10-sec-1" "d-11-sec-1 ""d-12-sec-1";
             }
+            
             .d-1-sec-1{
                 grid-area: d-1-sec-1;
                 background-image: url("../img/website_image_asian_1.jpg");
@@ -649,6 +689,7 @@ main{
 
             .d-sec-1{
                 width: 175px;
+                height: 120px;
                 position: relative;
                 border-radius: 13px;
                 margin: 20px;
@@ -699,9 +740,17 @@ main{
         @media (max-width:1300px) {
             width: calc(100% - 110px);
         }
+        @media (max-width:568px) {
+            padding:10px;
+            width: calc(100% - 20px);
+        }
         .d-1-sec-2{
             padding: 0 80px 0 96px;
             height: 100%;
+            @media (max-width:568px) {
+                padding:10px;
+                width: calc(100% - 20px);
+            }
             form{
                 @include flex-row-between();
                 background-color: #fff;
@@ -709,6 +758,9 @@ main{
                 width: 300px;
                 margin-bottom: 30px;
                 border-radius: 6px;
+                @media (max-width:568px) {
+                    width: calc(100% - 10px);
+                }
                 input{
                     background-color: transparent;
                     border: none;
@@ -721,6 +773,7 @@ main{
                     }
                 }
                 button{
+                    white-space: nowrap;
                     cursor: pointer;
                     background-color: #FF00A6;
                     color: #fff;
@@ -740,6 +793,10 @@ main{
                 color: #333;
                 font-size: 35px;
                 margin-bottom: 40px;
+                @media (max-width:568px) {
+                font-size: 25px;
+                    margin: 15px 0;
+                }
             }
             .p-1-d-1-sec-2{
                 line-height: 30px;
@@ -793,14 +850,24 @@ main{
         }
         .d-1-sec-3{
             padding: 25px 50px;
+            @media (max-width:568px) {
+                padding: 10px;
+            }
             h2{
                 color: #333;
                 font-size: 30px;
+                @media (max-width:568px) {
+                font-size: 24px;
+                    margin: 8px 0;
+                }
             }
             p{
                 color: #333;
                 margin: 40px 0;
                 font-size: 18px;
+                @media (max-width:568px) {
+                        margin: 20px 0;
+                    }
             }
             button{
                 @include flex-row-center();
@@ -850,6 +917,10 @@ footer{
         background-color: rgb(255, 255, 255);
         @media (max-width:1280px) {
             padding-left:0;
+        }
+        @media (max-width:568px) {
+            width: calc(100% - 20px);
+        padding:10px;
         }
         h4{
             font-weight: 700;
@@ -943,6 +1014,11 @@ footer{
         background-color:rgb(249, 250, 251);
         padding:20px 50px 60px 50px;
         flex-wrap: wrap;
+        @media (max-width:568px) {
+        padding:10px;
+        width: calc(100% - 20px);
+            
+        }
         .d-1-sec-2-footer{
             padding: 20px;
             .d-matn-icon-footer{
